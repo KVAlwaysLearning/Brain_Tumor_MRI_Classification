@@ -1,0 +1,31 @@
+{
+ "class_names": [
+  "glioma",
+  "meningioma",
+  "no_tumor",
+  "pituitary"
+ ],
+ "display_names": [
+  "Glioma",
+  "Meningioma",
+  "No Tumor",
+  "Pituitary"
+ ],
+ "input_checks": {
+  "max_channel_diff": 5.0,
+  "foreground_ratio_range": [
+   0.24320560302734376,
+   0.9999891845703125
+  ],
+  "mean_intensity_range": [
+   17.868322801589965,
+   115.28196918487528
+  ],
+  "border_dark_min": 0.5,
+  "min_confidence": 0.6328670978546143,
+  "note": "Warnings, not a medical-grade out-of-distribution detector. min_confidence = 5th percentile of the best model's confidence on correctly classified validation images."
+ },
+ "img_size": 224,
+ "foreground_threshold": 15,
+ "best_model": "MobileNetV2 \u2014 fine-tuned"
+}
